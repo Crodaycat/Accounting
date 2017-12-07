@@ -1,0 +1,7 @@
+
+# HTID:813359: DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES BELOW
+php_value display_errors 1
+# DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES ABOVE HTID:813359:
+
+#Listado de contenido de un directorio
+Options All -Indexes
