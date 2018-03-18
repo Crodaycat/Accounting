@@ -19,13 +19,18 @@
 		}
 
 		public function userRegisterController () {
-			$data = array(	"user"=>$_POST["user"],
+			if (isset($_POST["name"])) {
+				$data = array(	"user"=>$_POST["name"],
 							"password"=>$_POST["password"],
 							"email"=>$_POST["email"]);
 
-			$response = UserData::userRegisterModel ($data, "usuarios");
 
-			echo $response;
+				$response = UserData::userRegisterModel ($data, "usuarios");
+
+				if ($response == "success") {
+					header("location:index.php?action=ok");
+				}
+			}
 		}
 
 	}

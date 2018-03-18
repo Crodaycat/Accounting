@@ -11,9 +11,10 @@
 
 			<ul>
 				<li><a href="index.php">Home</a></li>
-				<li><a href="index.php?action=services">Services</a></li>
-				<li><a href="index.php?action=aboutUs">About us</a></li>
-				<li><a href="index.php?action=contactUs">Contact us</a></li>
+				<li><a href="services">Services</a></li>
+				<li><a href="aboutUs">About us</a></li>
+				<li><a href="contactUs">Contact us</a></li>
+				<li><a href="userRegister">Register a new user</a></li>
 			</ul>
 		</li>
 
