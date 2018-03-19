@@ -32,6 +32,13 @@
 			$stmt -> close();
 		}
 
+		public static function usersViewModel ($table) {
+			$stmt = Connection::connect()->prepare("SELECT usuarios_id, usuario, email, password FROM $table");
+			$stmt -> execute();
+			return $stmt -> fetchAll();
+			$stmt -> close();
+		}
+
 	}
 
 ?>

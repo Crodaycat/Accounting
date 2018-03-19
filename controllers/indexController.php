@@ -58,6 +58,22 @@
 			}
 		}
 
+		public function usersViewController () {
+			$response = UserData::usersViewModel("usuarios");
+
+			foreach ($response as $row => $user) {
+				echo 	'<tr>
+							<td>'.$user["usuario"].'</td>
+							<td>'.$user["email"].'</td>
+							<td>'.$user["password"].'</td>
+							<td>
+								<a href="'.'">	Editar <i class="icon right fas fa-edit"></i><a/> - 
+								<a href="'.'">Eliminar <i class="fas fa-times-circle"></i></a>
+							</td>
+						</tr>';
+			}
+		}
+
 	}
 
 ?>

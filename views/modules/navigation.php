@@ -61,9 +61,11 @@
 			</ul>
 		</li>
 
-		<li><a href="#">Section 4<i class="icon right fa fa-chevron-down" aria-hidden="true"></i></a>
+		<li><a href="#">
+			Seguridad
+			<i class="icon right fa fa-chevron-down" aria-hidden="true"></i></a>
 			<ul>
-				<li><a href="#">item 1</a></li>
+				<li><a href="usersView">Usuarios registrados</a></li>
 				<li><a href="#">item 2</a></li>
 				<li><a href="#">item 3</a></li>
 				<li><a href="#">item 4</a></li>
