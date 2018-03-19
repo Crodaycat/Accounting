@@ -21,6 +21,17 @@
 			$stmt -> close();
 
 		}
+
+		public static function userLoginModel ($data, $table) {
+
+			$stmt = Connection::connect()->prepare("SELECT usuario, email, password FROM $table WHERE email = :email");
+			$stmt -> bindParam(":email", $data["email"], PDO::PARAM_STR);
+			$stmt -> execute();
+			return $stmt -> fetch();
+
+			$stmt -> close();
+		}
+
 	}
 
 ?>

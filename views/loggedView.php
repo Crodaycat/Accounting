@@ -15,7 +15,9 @@
 			<i class="icon right fa fa-bars"></i>
 		</a>
 
-		<div style="display: inline-block; float: right;">Bienvenido</div>
+		<div style="display: inline-block; float: right;">
+			Bienvenido <?php echo $_SESSION["userName"]; ?> 
+		</div>
 	</header>
 
 	<?php
@@ -38,10 +40,8 @@
 		<br><br>
 
 		<?php
-
 			$indexController = new IndexController();
 			$indexController -> linksPagesController();
-
 		?>
 
 	</div>

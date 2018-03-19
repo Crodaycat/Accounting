@@ -39,6 +39,25 @@
 			}
 		}
 
+		public function userLogInController () {
+			if (isset($_POST["logInEmail"])) {
+				$data = array("email" => $_POST["logInEmail"], 
+							"passowrd" => $_POST["logInPassword"]);
+
+				$response = UserData::userLogInModel ($data, "usuarios");
+
+				if ($response["email"] == $_POST["logInEmail"] && $response["password"] == $_POST["logInPassword"]) {
+					session_start();
+					$_SESSION["userName"] = $response["usuario"];
+					$_SESSION["userEmail"] = $response["email"];
+
+					header("location:index.php");
+				} else {
+					header("location:fallo");
+				}
+			}
+		}
+
 	}
 
 ?>
