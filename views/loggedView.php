@@ -27,7 +27,14 @@
 
 	?>
 
-	<div class="main main-content">
+	<div class="main main-content container">
+		<?php
+			$indexController = new IndexController();
+			$indexController -> linksPagesController();
+		?>
+
+		<br><br>
+
 		<i class="fa fa-bar-chart" aria-hidden="true"></i> Barras
 		<i class="fa fa-times" aria-hidden="true"></i> Cerrar
 		<i class="fa fa-shield" aria-hidden="true"></i> Sguridad
@@ -37,13 +44,6 @@
 		<i class="fa fa-minus-square" aria-hidden="true"></i> Inventario -
 		<i class="fa fa-pencil-square" aria-hidden="true"></i> Inventario Editar
 		<i class="fa fa-file-text" aria-hidden="true"></i> Venta - Facturación
-
-		<br><br>
-
-		<?php
-			$indexController = new IndexController();
-			$indexController -> linksPagesController();
-		?>
 
 	</div>
 

@@ -1,3 +1,14 @@
+<h1>Listado de usuarios</h1>
+
+<?php
+	if (isset($_GET["action"])) {
+		if ($_GET["action"] == "userUpdated") {
+			echo "Cambio exitoso.";
+		}
+
+	}
+?>
+
 <table class="table">
 	<thead>
 		<tr>
