@@ -13,10 +13,12 @@
 			$stmt -> bindParam(":email", $data["email"], PDO::PARAM_STR);
 
 			if ($stmt -> execute()) {
-				return "Success";
+				return "success";
 			} else {
 				return "error";
 			}
+
+			$stmt -> close();
 
 		}
 	}
