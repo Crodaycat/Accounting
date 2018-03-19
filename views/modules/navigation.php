@@ -4,7 +4,7 @@
 
 		<li>
 			<a href="#">
-				<i class="icon left fa fa-file-text" aria-hidden="true"></i>
+				<i class="icon left fas fa-globe"></i>
 				Navegación
 				<i class="icon right fa fa-chevron-down" aria-hidden="true"></i>
 			</a>
@@ -20,7 +20,7 @@
 
 		<li>
 			<a href="#">
-				<i class="icon left fa fa-file-text" aria-hidden="true"></i>
+				<i class="icon left fas fa-file-alt"></i>
 				Facturación
 				<i class="icon right fa fa-chevron-down" aria-hidden="true"></i>
 			</a>
@@ -62,6 +62,7 @@
 		</li>
 
 		<li><a href="#">
+			<i class="icon left fas fa-shield-alt"></i>
 			Seguridad
 			<i class="icon right fa fa-chevron-down" aria-hidden="true"></i></a>
 			<ul>

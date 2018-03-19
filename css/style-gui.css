@@ -6,6 +6,10 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
+body, html {
+  height: 100%;
+}
+
 header {
   position: relative;
   width: 100%;
@@ -17,6 +21,8 @@ header {
   color: white;
   z-index: 2; }
 
+/*Links Styles*/
+
 a {
   text-decoration: none; }
 
@@ -25,25 +31,37 @@ a:hover {
 
 a:active {
   text-decoration: none;
-  outline: 0; }
+  outline: 0; 
+}
 
-/*Scroll bars*/
-::-webkit-scrollbar {
-  width: 0.5em;
-  height: 0.5em; }
+/*Ordering styles*/
 
-::-webkit-scrollbar-thumb {
-  background: slategray; }
+.content-center {
+  justify-content: center;
+  align-content: center;
+}
 
-::-webkit-scrollbar-track {
-  background: #b8c0c8; }
+.content-center-hor {
+  justify-content: center;
+}
 
--moz-scrollbar {
-  width: 10px; }
+.content-center-ver {
 
-body {
-  scrollbar-face-color: slategray;
-  scrollbar-track-color: #b8c0c8; }
+}
+
+/*height and width styles*/
+.size-fs {
+  width: 100%;
+  height: 100%;
+}
+
+.size-fs-position {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
 
 /*Estilos del menú*/
 .contanier-menu {
@@ -52,7 +70,7 @@ body {
   left: 0px;
   bottom: 0;
   width: 50%;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 14px;
   font-weight: bold;
   background-color: black;
@@ -81,7 +99,14 @@ body {
 .contanier-menu ul li a:hover, a:focus {
   text-decoration: none;
   color: rgba(250, 250, 250, 0.8);
-  background-color: rgba(150, 150, 150, 0.2); }
+  background-color: rgba(150, 150, 150, 0.2); 
+}
+
+.contanier-menu ul li ul li a:hover, a:focus {
+  text-decoration: none;
+  color: rgba(250, 250, 250, 0.8);
+  background-color: rgba(150, 150, 150, 0.2); 
+}
 
 .contanier-menu .menu .icon.left {
   float: left;
