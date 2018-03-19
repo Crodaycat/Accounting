@@ -17,6 +17,7 @@
 
 		<div style="display: inline-block; float: right;">
 			Bienvenido <?php echo $_SESSION["userName"]; ?> 
+			<a href="logout"><i class="fas fa-sign-out-alt"></i></a>
 		</div>
 	</header>
 
